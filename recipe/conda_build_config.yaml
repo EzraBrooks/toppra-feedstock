@@ -1,12 +1,13 @@
+# conda-forge supports only Python 3.14+ on linux-riscv64
 python:
-  - 3.10.* *_cpython
-  - 3.11.* *_cpython
-  - 3.12.* *_cpython
-  - 3.13.* *_cp313
+  - 3.10.* *_cpython   # [not riscv64]
+  - 3.11.* *_cpython   # [not riscv64]
+  - 3.12.* *_cpython   # [not riscv64]
+  - 3.13.* *_cp313     # [not riscv64]
   - 3.14.* *_cp314
 is_python_min:
   - "true"
-  - "false"
-  - "false"
-  - "false"
-  - "false"
+  - "false"            # [not riscv64]
+  - "false"            # [not riscv64]
+  - "false"            # [not riscv64]
+  - "false"            # [not riscv64]
